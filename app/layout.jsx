@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <head />
       <body>
         <div
-          className={`overflow-hidden bg-gray-800 ${darkMode ? "dark" : ""}`}
+          className={`overflow-hidden ${darkMode ? "dark" : ""}`}
           id="dark"
         >
           <Navbar handleMode={handleMode} darkMode={darkMode} />
