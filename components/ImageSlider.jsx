@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import AnimatedText from "./AnimatedCharacters";
+import { AnimatedCharacters } from "./";
 import "../styles/slider.css";
 
 const sliderStyles = {
@@ -15,12 +15,12 @@ const sliderStyles = {
 
 const slideStyles = {
   width: "100%",
-  height: "100%",
+  // height: "112%",
   backgroundSize: "cover",
   backgroundPosition: "center",
   marginLeft: "auto",
   marginRight: "auto",
-  // position: "relative",
+  position: "relative",
 };
 
 const rightArrowStyles = {
@@ -124,11 +124,11 @@ const ImageSlider = ({ slides }) => {
         </div>
       </div>
       <div
-        style={slideStylesWidthBackground}>
+        style={slideStylesWidthBackground} className="h-[105%] md:h-[112%]">
         {/* <div style={text} className="text-7xl text-red-500 z-10">
           {slides.title}
         </div> */}
-        <p className="text-sm md:text-3xl text-gray-800 dark:text-gray-200 absolute mt-10 border-4 border-gray-800 dark:border-gray-200 bg-gray-200 dark:bg-gray-600 p-2 md:p-4 top-[5rem] md:top-[12rem] left-[5.5rem] md:left-[21.5rem]">
+        <p className="text-sm md:text-3xl text-gray-800 dark:text-gray-200 absolute mt-10 border-4 border-gray-800 dark:border-gray-200 bg-gray-200 dark:bg-gray-600 p-2 md:p-4 top-[5rem] md:top-[12rem] left-[25%]">
           Make up | Event planner | Bead making
         </p>
         <motion.div
@@ -140,7 +140,7 @@ const ImageSlider = ({ slides }) => {
         >
           <div className="container">
             {placeholderText.map((item, index) => {
-              return <AnimatedText {...item} key={index} />;
+              return <AnimatedCharacters {...item} key={index} />;
             })}
           </div>
           {/* <button onClick={handleReplay}>

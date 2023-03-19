@@ -2,8 +2,8 @@
 
 import "./globals.css";
 import { useState } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/sections/Navbar";
+import Footer from "@/sections/Footer";
 
 export default function RootLayout({ children }) {
   const [darkMode, setDarkMode] = useState(false);
