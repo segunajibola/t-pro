@@ -4,6 +4,7 @@ import { TypingText, TitleText } from "./CustomTexts";
 // import NewFeatures from "./NewFeatures";
 // import InsightCard from "./InsightCard";
 import ImageSlider from "./ImageSlider";
+import ServiceCard from "./ServiceCard";
 import AnimatedCharacters from "./AnimatedCharacters";
 
 export {
@@ -11,6 +12,7 @@ export {
   TypingText,
   ImageSlider,
   AnimatedCharacters,
+  ServiceCard,
 //   StartSteps,
 //   NewFeatures,
 //   ExploreCard,

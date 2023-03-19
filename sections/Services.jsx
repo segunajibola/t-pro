@@ -1,14 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TypingText } from "../components";
+import { TypingText, ServiceCard } from "../components";
 import "../styles/gradient.css";
 import styles from "../styles";
-import services from "../data/services"
+import services from "../data/services";
 import { fadeIn, staggerContainer } from "../utils/motion";
 
 const Services = () => (
-  <section className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10`}>
+  <section
+    className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10`}
+  >
     <div className="gradient-02 z-0" />
     <motion.div
       variants={staggerContainer}
@@ -17,7 +19,10 @@ const Services = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| Services" textStyles="text-center md:text-[30px] font-bold dark:text-gray-200" />
+      <TypingText
+        title="| Services"
+        textStyles="text-center md:text-[30px] font-bold dark:text-gray-200"
+      />
 
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
@@ -26,9 +31,9 @@ const Services = () => (
         Specializing in Beauty & Decoration services.
       </motion.p>
 
-      <div>
-        {services.map(service => (
-            <div key={service.id}>{service.name}</div>
+      <div className="grid grid-cols-1 pt-20 md:-mt-5 md:pt-32 md:grid-cols-3 gap-4">
+        {services.map((service) => (
+          <ServiceCard service={service} />
         ))}
       </div>
 
