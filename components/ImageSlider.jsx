@@ -20,6 +20,7 @@ const slideStyles = {
   backgroundPosition: "center",
   marginLeft: "auto",
   marginRight: "auto",
+  // position: "relative",
 };
 
 const rightArrowStyles = {
@@ -27,8 +28,8 @@ const rightArrowStyles = {
   top: "50%",
   transform: "translate(0, -50%)",
   right: "32px",
-  fontSize: "45px",
-  color: "#2b4b77",
+  fontSize: "30px",
+  color: "gray",
   zIndex: 1,
   cursor: "pointer",
 };
@@ -38,8 +39,8 @@ const leftArrowStyles = {
   top: "50%",
   transform: "translate(0, -50%)",
   left: "32px",
-  fontSize: "45px",
-  color: "#2b4b77",
+  fontSize: "30px",
+  color: "gray",
   zIndex: 1,
   cursor: "pointer",
 };
@@ -83,7 +84,7 @@ const ImageSlider = ({ slides }) => {
   useEffect(() => {
     setTimeout(() => {
       goToNext();
-    }, 6000);
+    }, 3000);
   });
 
   const [replay, setReplay] = useState(true);
@@ -118,17 +119,18 @@ const ImageSlider = ({ slides }) => {
         <div onClick={goToPrevious} style={leftArrowStyles}>
           ❰
         </div>
-        <p className="flex justify-center text-3xl text-red-500 absolute mt-10 top-[12rem] left-[22rem]">
-          Make up | Event planner | bBead making
-        </p>
         <div onClick={goToNext} style={rightArrowStyles}>
           ❱
         </div>
       </div>
-      <div style={slideStylesWidthBackground}>
+      <div
+        style={slideStylesWidthBackground}>
         {/* <div style={text} className="text-7xl text-red-500 z-10">
           {slides.title}
         </div> */}
+        <p className="text-sm md:text-3xl text-white absolute mt-10 border-4 bg-gray-600 p-2 md:p-4 top-[5rem] md:top-[12rem] left-[5.5rem] md:left-[21.5rem]">
+          Make up | Event planner | Bead making
+        </p>
         <motion.div
           className="App"
           initial="hidden"
