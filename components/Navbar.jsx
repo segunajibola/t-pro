@@ -18,7 +18,7 @@ const Navbar = ({ handleMode, darkMode }) => {
       className="p-6 fixed z-20 w-full h-[80px] shadow-sm flex justify-between items-center bg-gray-200 dark:bg-gray-500 text-gray-700 dark:text-gray-300"
     >
       <Link
-        className="cursor-pointer text-3xl text-white leading-[30.24px]"
+        className="cursor-pointer text-3xl text-gray-800 dark:text-gray-200 leading-[30.24px]"
         href="/"
         onClick={() => window.scrollTo(0, 0)}
       >

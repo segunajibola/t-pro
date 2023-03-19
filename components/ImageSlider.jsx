@@ -128,7 +128,7 @@ const ImageSlider = ({ slides }) => {
         {/* <div style={text} className="text-7xl text-red-500 z-10">
           {slides.title}
         </div> */}
-        <p className="text-sm md:text-3xl text-white absolute mt-10 border-4 bg-gray-600 p-2 md:p-4 top-[5rem] md:top-[12rem] left-[5.5rem] md:left-[21.5rem]">
+        <p className="text-sm md:text-3xl text-gray-800 dark:text-gray-200 absolute mt-10 border-4 border-gray-800 dark:border-gray-200 bg-gray-200 dark:bg-gray-600 p-2 md:p-4 top-[5rem] md:top-[12rem] left-[5.5rem] md:left-[21.5rem]">
           Make up | Event planner | Bead making
         </p>
         <motion.div
