@@ -9,7 +9,7 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 
 const Services = () => (
   <section
-    className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10`}
+    className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relat ive z-10`}
   >
     <div className="gradient-02 z-0" />
     <motion.div
@@ -31,7 +31,7 @@ const Services = () => (
         Specializing in Beauty & Decoration services.
       </motion.p>
 
-      <div className="grid grid-cols-1 pt-20 md:-mt-5 md:pt-32 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 pt-20 md:-mt-5 md:pt-32 md:grid-cols-3 gap-4 h-full">
         {services.map((service) => (
           <ServiceCard service={service} />
         ))}
