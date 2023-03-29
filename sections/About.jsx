@@ -30,14 +30,21 @@ const About = () => (
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`mx-auto ${styles.flexCenter} flex-col md:w-1/2 text-center md:text-right`}
+        className={`mx-auto flex justify-center items-center md:items-end flex-col md:w-1/2 text-center md:text-right`}
       >
-        <motion.h2
+        {/* <motion.h2
           variants={fadeIn("up", "tween", 0.1, 0.3)}
-          className="mt-5 md:mt-0 text-[15px] md:text-[23px] md:text-right border-4 border-red-500"
+          className="mt-5 md:mt-0 text-[15px] md:text-[23px] md:text-right text-secondary-white dark:text-white mr-3"
+        >
+          T-Pro Signature: The Art Of Beauty
+        </motion.h2> */}
+          <motion.h2
+          variants={fadeIn("up", "tween", 0.1, 0.3)}
+          className="flex justify-end mt-[8px] font-normal mr-3 text-[17px] md:text-[20px] text-secondary-white dark:text-white align-right"
         >
           T-Pro Signature: The Art Of Beauty
         </motion.h2>
+        
         <motion.p
           variants={fadeIn("up", "tween", 0.1, 0.3)}
           className="mt-[8px] font-normal mr-3 text-[17px] md:text-[20px] text-secondary-white dark:text-white"
@@ -56,11 +63,9 @@ const About = () => (
           desired look and feel. Thank you for choosing our website for all your
           beauty, bead making, and event decoration needs! */}
         </motion.p>
-        <div className="flex flex-row justify-end text-right border-4 border-red-500">
-          <button className="flex bg-gray-300 text-white p-5 my-3">
+          <button className="bg-gray-300 p-3 my-3 mr-3">
             More About Us
           </button>
-        </div>
       </motion.div>
       <div className="flex flex-col justify-center w-full mt-5 md:mt-0 md:w-[50%]">
         <img src="/wedding-makeup.jpg" alt="" className="h-[80%] w-[100%]" />
