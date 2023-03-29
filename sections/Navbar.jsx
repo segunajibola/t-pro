@@ -4,14 +4,20 @@ import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
 import Link from "next/link";
 import { useState } from "react";
-import { FaMoon, FaLightbulb, FaBars, FaWhatsapp, FaTimes } from "react-icons/fa";
+import {
+  FaMoon,
+  FaLightbulb,
+  FaBars,
+  FaWhatsapp,
+  FaTimes,
+} from "react-icons/fa";
 
 const Navbar = ({ handleMode, darkMode }) => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
     <nav
-    // motion.nav
+      // motion.nav
       // variants={navVariants}
       // initial="hidden"
       // whileInView="show"
@@ -57,7 +63,9 @@ const Navbar = ({ handleMode, darkMode }) => {
             <Link href="/contact">Contact</Link>
           </li>
           <span>|</span>
-          <FaWhatsapp size={20}/>
+          <a href="https://wa.me/c/2347085596323">
+            <FaWhatsapp size={20} />
+          </a>
         </ul>
 
         {/* Dark/Light Mode */}
@@ -89,15 +97,7 @@ const Navbar = ({ handleMode, darkMode }) => {
             About
           </Link>
         </li>
-        <li className="py-2 text-3xl">
-          <Link
-            onClick={handleClick}
-            className="cursor-pointer"
-            href="/courses"
-          >
-            Courses
-          </Link>
-        </li>
+
         <li className="py-2 text-3xl">
           <Link
             onClick={handleClick}
