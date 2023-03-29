@@ -12,12 +12,17 @@ const About = () => (
   >
     <div className="gradient-02 z-0" />
 
-    <div className="my-5">
-      <TypingText
+    <TypingText
         title="| About T-pro Signature"
-        textStyles="text-center md:text-[24px] font-bold dark:text-gray-200"
+        textStyles="text-center md:text-[30px] font-bold dark:text-gray-200"
       />
-    </div>
+
+      <motion.p
+        variants={fadeIn("up", "tween", 0.2, 1)}
+        className="mt-[8px] font-normal text-[14px] md:text-[24px] text-center text-secondary-white dark:text-white"
+      >
+        Who We Are
+      </motion.p>
 
     <div className="flex sm:flex-col md:flex-row">
       <motion.div
@@ -29,7 +34,7 @@ const About = () => (
       >
         <motion.h2
         variants={fadeIn("up", "tween", 0.1, 0.3)}
-        className="text-[19px] md:text-[20px]"
+        className="text-[19px] text-right md:text-[20px]"
         >
           T-Pro Signature: The Art Of Beauty
         </motion.h2>
