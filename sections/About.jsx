@@ -11,13 +11,13 @@ const About = () => (
     className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10`}
   >
     <div className="gradient-02 z-0" />
-    <div className="flex md:flex-col">
+    <div className="flex sm:flex-col md:flex-row">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+        className={`mx-auto ${styles.flexCenter} border-4 border-red-500 flex-col w-1/2`}
       >
         <TypingText
           title="| About T-pro Signature"
@@ -49,7 +49,7 @@ const About = () => (
           className="w-[50px] h-[50px] object-contain my-[28px] bg-gray-300 p-3 dark:bg-gray-500"
         />
       </motion.div>
-      <img src="/wedding-makeup.jpg" alt="" className="h-full w-32" />
+      <img src="/wedding-makeup.jpg" alt="" className="h-full w-1/2" />
     </div>
   </section>
 );
