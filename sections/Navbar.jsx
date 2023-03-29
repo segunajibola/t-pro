@@ -46,7 +46,7 @@ const Navbar = ({ handleMode, darkMode }) => {
           </li>
           <span>|</span>
           <li className="cursor-pointer">
-            <Link href="/services">Services</Link>
+            <a href="/#services">Services</a>
           </li>
           <span>|</span>
           <li className="cursor-pointer">

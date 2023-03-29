@@ -24,7 +24,7 @@ const About = () => (
       />
 
       <motion.p
-        variants={fadeIn("up", "tween", 0.2, 1)}
+        variants={fadeIn("up", "tween", 0.1, 0.3)}
         className="mt-[8px] font-normal text-[14px] md:text-[24px] text-center text-secondary-white dark:text-white"
       >
         Welcome to our world of beauty, creativity, and elegance! Our website
@@ -42,7 +42,7 @@ const About = () => (
       </motion.p>
 
       <motion.img
-        variants={fadeIn("up", "tween", 0.3, 1)}
+        variants={fadeIn("up", "tween", 0.1, 0.3)}
         src="/arrow-down.svg"
         alt="arrow down"
         className="w-[50px] h-[50px] object-contain my-[28px] bg-gray-300 p-3 dark:bg-gray-500"
