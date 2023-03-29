@@ -33,24 +33,31 @@ const About = () => (
           decoration that are tailored to your specific needs and preferences.
           We are committed to providing you with the best quality products and
           services that will leave you feeling and looking your absolute best.
-          At our website, we pride ourselves on our exceptional customer service
-          and attention to detail. We understand that every customer has
+          At our website, we pride ourselves on our exceptional customer service and attention to detail.
+          {/*  We understand that every customer has
           different needs and preferences, and we strive to exceed your
           expectations every time. Whether you're looking for a simple service
           or a complete transformation, we are here to help you achieve your
           desired look and feel. Thank you for choosing our website for all your
-          beauty, bead making, and event decoration needs!
+          beauty, bead making, and event decoration needs! */}
         </motion.p>
 
-        <motion.img
+        
+      </motion.div>
+      <div className="flex flex-col justify-center w-[50%] border-4 border-green-500">
+      <img src="/wedding-makeup.jpg" alt="" className="h-[90%] w-[100%]" />
+      </div>
+        
+    </div>
+    <div className="flex justify-center">
+      <motion.img
           variants={fadeIn("up", "tween", 0.1, 0.3)}
           src="/arrow-down.svg"
           alt="arrow down"
           className="w-[50px] h-[50px] object-contain my-[28px] bg-gray-300 p-3 dark:bg-gray-500"
         />
-      </motion.div>
-      <img src="/wedding-makeup.jpg" alt="" className="h-full w-1/2" />
     </div>
+    
   </section>
 );
 
