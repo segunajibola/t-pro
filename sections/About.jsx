@@ -34,7 +34,7 @@ const About = () => (
       >
         <motion.h2
         variants={fadeIn("up", "tween", 0.1, 0.3)}
-        className="text-[19px] text-right md:text-[20px]"
+        className="text-[19px] md:text-[23px]"
         >
           T-Pro Signature: The Art Of Beauty
         </motion.h2>
@@ -58,7 +58,7 @@ const About = () => (
         </motion.p>
       </motion.div>
       <div className="flex flex-col justify-center w-[50%]">
-        <img src="/wedding-makeup.jpg" alt="" className="h-[90%] w-[100%]" />
+        <img src="/wedding-makeup.jpg" alt="" className="h-[80%] w-[100%]" />
       </div>
     </div>
     <div className="flex justify-center">
