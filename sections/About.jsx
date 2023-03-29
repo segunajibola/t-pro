@@ -24,17 +24,17 @@ const About = () => (
         Who We Are
       </motion.p>
 
-    <div className="flex sm:flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`mx-auto ${styles.flexCenter} flex-col w-1/2 text-right`}
+        className={`mx-auto ${styles.flexCenter} flex-col md:w-1/2 text-center md:text-right`}
       >
         <motion.h2
         variants={fadeIn("up", "tween", 0.1, 0.3)}
-        className="text-[19px] md:text-[23px]"
+        className="mt-5 md:mt-0 text-[15px] md:text-[23px]"
         >
           T-Pro Signature: The Art Of Beauty
         </motion.h2>
@@ -57,7 +57,7 @@ const About = () => (
           beauty, bead making, and event decoration needs! */}
         </motion.p>
       </motion.div>
-      <div className="flex flex-col justify-center w-[50%]">
+      <div className="flex flex-col justify-center w-full mt-5 md:mt-0 md:w-[50%]">
         <img src="/wedding-makeup.jpg" alt="" className="h-[80%] w-[100%]" />
       </div>
     </div>
