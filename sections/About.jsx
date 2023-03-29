@@ -40,7 +40,7 @@ const About = () => (
         </motion.h2> */}
           <motion.h2
           variants={fadeIn("up", "tween", 0.1, 0.3)}
-          className="flex justify-end mt-[8px] font-normal mr-3 text-[17px] md:text-[20px] text-secondary-white dark:text-white align-right"
+          className="flex justify-end mt-[8px] font-normal mr-3 text-[20px] md:text-[23px] text-secondary-white dark:text-white align-right"
         >
           T-Pro Signature: The Art Of Beauty
         </motion.h2>
