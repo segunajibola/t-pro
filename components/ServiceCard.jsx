@@ -10,7 +10,7 @@ const ServiceCard = ({ service }) => {
       <img
         src={service.image}
         alt={`${service.name} services`}
-        className="rounded-t-2xl object-cover object-top w-full h-48"
+        className="rounded-t-2xl object-cover object-top w-full h-[200px]"
       />
       <div className="flex flex-col px-3 py-5 text-center h-full justify-between">
         <h3 className="font-bold text-2xl">{service.name}</h3>
