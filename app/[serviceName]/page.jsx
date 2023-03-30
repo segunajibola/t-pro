@@ -35,7 +35,21 @@ const ParticularService = ({ params }) => {
               height={100}
               className="w-full h-[200px] bg-cover object-cover object-center"
             />
-            <h2 className="text-center text-xl my-10">{service.name}</h2>
+            <div className="w-[90%] mx-auto text-center">
+              <h2 className="text-xl md:text-2xl font-semibold my-10">{service.name}</h2>
+              <p className="w-[80%] mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident exercitationem expedita quod nemo adipisci earum
+                pariatur recusandae, reprehenderit laborum at, dolorum alias
+                ipsum odio dolorem, saepe voluptatum excepturi doloremque
+                quaerat.
+              </p>
+              <button className="bg-gray-500 dark:bg-gray-700 p-3 my-3 text-white rounded-md text-center">
+                <a href="" className="">
+                  Book a session
+                </a>
+              </button>
+            </div>
           </div>
         ))}
     </div>
