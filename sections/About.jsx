@@ -24,7 +24,7 @@ const About = () => (
       Who We Are
     </motion.p>
 
-    <div className="flex flex-col md:flex-row">
+    <div className={`${styles.innerWidth} flex flex-col md:flex-row`}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"

@@ -4,7 +4,7 @@ const services = [
     name: "Beauty",
     image: "/makeup.jpg",
     description:
-      "Our beauty section offers a variety of services including hair styling, makeup, skincare, and nail services. Our team of experienced professionals uses the latest techniques and products to ensure that you look and feel your best. Whether you're looking for a simple touch-up or a full glam makeover, we have you covered.",
+      "Our beauty section offers hair styling, makeup, skincare, and nail services. Our team of experienced professionals uses the latest techniques and products to ensure that you look and feel your best. Whether you're looking for a simple touch-up or a full glam makeover, we have you covered.",
   },
   {
     id: "2",
