@@ -34,7 +34,7 @@ const MainAbout = () => (
       </motion.p>
       </div>
       <div className="mt-10 text-center">
-      <p className="">
+      <p className="w-[80%] mx-auto">
         We are committed to providing you with the best quality products and
         services that will leave you feeling and looking your absolute best. At
         our website, we pride ourselves on our exceptional customer service and
@@ -49,7 +49,7 @@ const MainAbout = () => (
       <div className="flex flex-col justify-center items-center">
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="my-[12px] font-normal text-[14px] md:text-[24px] text-center text-secondary-white dark:text-white"
+        className="mt-[20px] mb-[12px] font-normal text-[14px] md:text-[24px] text-center text-secondary-white dark:text-white"
       >
         Founder
       </motion.p>
@@ -58,10 +58,10 @@ const MainAbout = () => (
         alt=""
         width={400}
         height={400}
-        className="flex justify-center border-4 border-red-500 block"
+        className=""
       />
       <h2 className="my-6">Aminat Quadri</h2>
-      <p>
+      <p className="w-[80%] mx-auto text-center">
         Aminat Quadri is Co-Owner and head of operations at Studio Sashiko.
         Kyle has worked within the Tattoo industry since 2007, receiving a Body
         Piercing apprenticeship. He most recently acted as manager at a shop
@@ -73,7 +73,14 @@ const MainAbout = () => (
         and hyper-realistic work, but as a brand that is trail-blazing within
         the industry.
       </p>
-      <span><a href="">Quick call</a></span>
+      <button className="bg-gray-100 p-3 my-3 dark:text-white rounded-md">
+          <a
+            href=""
+            className=""
+          >
+            Quick call
+          </a>
+        </button>
     </div>
   </div>
 );
