@@ -21,7 +21,7 @@ const ServiceCard = ({ service }) => {
       <div className="px-3 py-5 h-[60%]">
         <div className="flex flex-col justify-between h-full text-center">
           <h3 className="font-bold text-2xl">{service.name}</h3>
-          <p className="pt-2">{truncate(service.description, 30) + " ..."}</p>
+          <p className="pt-2">{truncate(service.description, 30) + "..."}</p>
 
           <Link
             href={`/${service.name.toLowerCase().split(" ").join("-")}`}

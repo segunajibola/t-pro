@@ -11,14 +11,14 @@ const services = [
     name: "Bead Making",
     image: "/bead-making.jpg",
     description:
-      "Our bead making section offers a variety of handcrafted beaded jewelry that is unique and stylish. Our pieces are made from high-quality materials and are perfect for any occasion. We also offer beading classes for those who want to learn how to make their own beaded jewelry.",
+      "We are passionate about creating beautiful, handcrafted beaded jewelry that is both unique and stylish. Our website features a wide selection of high-quality beads, materials, and tools to help you create your own beautiful pieces of jewelry. Whether you're a beginner or an experienced beader, we offer a variety of beading classes and tutorials to help you improve your skills and create stunning designs. Our team of experienced professionals is always available to answer any questions you may have and provide you with expert advice. At our website, we believe that beading is more than just a hobby - it's a way to express your creativity and individuality. We strive to provide you with the best possible selection of beads and materials so that you can create one-of-a-kind pieces that truly reflect your personal style.",
   },
   {
     id: "3",
     name: "Event decoration",
     image: "/decoration.jpg",
     description:
-      "Our event decoration section offers a variety of services including floral arrangements, balloon decorations, and event planning. We understand that every event is unique and we work closely with you to create the perfect ambiance and decor for your special day.",
+      "We are dedicated to creating beautiful, memorable, and personalized events that exceed your expectations. Our team of experienced professionals offers a range of event decoration services, including floral arrangements, balloon decorations, and event planning. Whether you're planning a wedding, birthday party, or corporate event, we work closely with you to understand your vision and create a customized plan that suits your specific needs and budget. Our attention to detail and commitment to excellence ensure that your event is both beautiful and stress-free. At our website, we believe that every event is unique and deserves a personal touch. That's why we offer a variety of customizable decorations, ranging from classic and elegant to bold and modern. We are always up-to-date with the latest trends and styles, and we use only the highest quality materials to ensure that your event looks amazing from start to finish.",
   },
 ];
 
