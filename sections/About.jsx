@@ -47,16 +47,6 @@ const About = () => (
           Welcome to our world of beauty, creativity, and elegance! Our website
           offers a wide range of services in beauty, bead making, and event
           decoration that are tailored to your specific needs and preferences.
-          We are committed to providing you with the best quality products and
-          services that will leave you feeling and looking your absolute best.
-          At our website, we pride ourselves on our exceptional customer service
-          and attention to detail.
-          {/*  We understand that every customer has
-          different needs and preferences, and we strive to exceed your
-          expectations every time. Whether you're looking for a simple service
-          or a complete transformation, we are here to help you achieve your
-          desired look and feel. Thank you for choosing our website for all your
-          beauty, bead making, and event decoration needs! */}
         </motion.p>
         <button className="bg-gray-100 p-3 my-3 mr-3 dark:text-white rounded-md">
           <Link
