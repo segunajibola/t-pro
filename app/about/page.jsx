@@ -43,6 +43,28 @@ const MainAbout = () => (
         feel. Thank you for choosing our website for all your beauty, bead
         making, and event decoration needs!
       </p>
+      <h3>Founder</h3>
+      <Image
+        src="/decoration.jpg"
+        alt=""
+        width={400}
+        height={400}
+        className=""
+      />
+      <h2>KYLE OTSUJI</h2>
+      <p>
+        Kyle is Co-Owner and head of operations at Studio Sashiko.
+        Kyle has worked within the Tattoo industry since 2007, receiving a Body
+        Piercing apprenticeship. He most recently acted as manager at a shop
+        practicing body piercing, before opening Studio Sashiko with his wife,
+        Shaughnessy. Kyle’s creative direction with Studio Sashiko is highly
+        influenced by a passion for high fashion, street fashion, design and
+        architecture. His ability to spot and embrace creative trends has
+        allowed Studio Sashiko to realize itself not only as a leader in quality
+        and hyper-realistic work, but as a brand that is trail-blazing within
+        the industry.
+      </p>
+      <span><a href="">Quick call</a></span>
     </div>
   </div>
 );
