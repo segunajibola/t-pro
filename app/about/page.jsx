@@ -10,9 +10,9 @@ import Image from "next/image";
 
 const MainAbout = () => (
   <div className={`${styles.innerWidth}`}>
-    <div className="flex gap-4">
-      <Image src="/makeup.jpg" alt="" className="w-32 h-40" />
-      <Image src="/decoration.jpg" alt="" className="w-32 h-40" />
+    <div className="flex gap-4 justify-between">
+      <Image src="/makeup.jpg" alt="" width={200} height={200} className="" />
+      <Image src="/decoration.jpg" alt="" width={200} height={200} className="" />
     </div>
   </div>
 );
