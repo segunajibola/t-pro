@@ -4,7 +4,7 @@ const services = [
     name: "Beauty",
     image: "/makeup.jpg",
     description:
-      "Our beauty section offers hair styling, makeup, skincare, and nail services. Our team of experienced professionals uses the latest techniques and products to ensure that you look and feel your best. Whether you're looking for a simple touch-up or a full glam makeover, we have you covered.",
+      "Whether you're looking for a simple touch-up or a full glam makeover, we have you covered. We are dedicated to providing you with the best beauty services and products to help you look and feel your best. Our team of skilled professionals offers a range of services, including hair styling, makeup application, skincare, and nail care. We use only the highest quality products to ensure that you receive the best results possible. Our website also features a variety of beauty tips, tricks, and tutorials to help you maintain your beauty routine at home. We believe that beauty is more than just how you look on the outside, it's also about feeling confident and empowered from within. That's why we are committed to providing you with a welcoming and comfortable environment to enhance your beauty experience. Thank you for choosing our website for your beauty needs. We look forward to serving you and helping you achieve your desired look!",
   },
   {
     id: "2",

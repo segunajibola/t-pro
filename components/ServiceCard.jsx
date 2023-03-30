@@ -2,6 +2,9 @@ import React from "react";
 import Link from "next/link";
 
 const ServiceCard = ({ service }) => {
+  function truncate(str, no_words) {
+    return str.split(" ").splice(0, no_words).join(" ");
+  }
   return (
     <div
       className="flex flex-col bg-gray-400 rounded-3xl shadow-lg h-full relative mx-4 md:mx-2"
@@ -18,7 +21,7 @@ const ServiceCard = ({ service }) => {
       <div className="px-3 py-5 h-[60%]">
         <div className="flex flex-col justify-between h-full text-center">
           <h3 className="font-bold text-2xl">{service.name}</h3>
-          <p className="pt-2">{service.description}</p>
+          <p className="pt-2">{truncate(service.description, 30) + " ..."}</p>
 
           <Link
             href={`/${service.name.toLowerCase().split(" ").join("-")}`}
