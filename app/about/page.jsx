@@ -32,7 +32,9 @@ const MainAbout = () => (
       >
         Who We Are
       </motion.p>
-      <p className="mt-8 text-center">
+      </div>
+      <div className="mt-10 text-center">
+      <p className="">
         We are committed to providing you with the best quality products and
         services that will leave you feeling and looking your absolute best. At
         our website, we pride ourselves on our exceptional customer service and
@@ -43,17 +45,24 @@ const MainAbout = () => (
         feel. Thank you for choosing our website for all your beauty, bead
         making, and event decoration needs!
       </p>
-      <h3>Founder</h3>
+      </div>
+      <div className="flex flex-col justify-center items-center">
+      <motion.p
+        variants={fadeIn("up", "tween", 0.2, 1)}
+        className="my-[12px] font-normal text-[14px] md:text-[24px] text-center text-secondary-white dark:text-white"
+      >
+        Founder
+      </motion.p>
       <Image
         src="/decoration.jpg"
         alt=""
         width={400}
         height={400}
-        className=""
+        className="flex justify-center border-4 border-red-500 block"
       />
-      <h2>KYLE OTSUJI</h2>
+      <h2 className="my-6">Aminat Quadri</h2>
       <p>
-        Kyle is Co-Owner and head of operations at Studio Sashiko.
+        Aminat Quadri is Co-Owner and head of operations at Studio Sashiko.
         Kyle has worked within the Tattoo industry since 2007, receiving a Body
         Piercing apprenticeship. He most recently acted as manager at a shop
         practicing body piercing, before opening Studio Sashiko with his wife,
