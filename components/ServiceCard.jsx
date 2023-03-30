@@ -4,7 +4,7 @@ import Link from "next/link";
 const ServiceCard = ({ service }) => {
   return (
     <div
-      className="flex flex-col bg-gray-400 rounded-3xl shadow-lg h-fit relative mx-4 md:mx-2"
+      className="flex flex-col bg-gray-400 rounded-3xl shadow-lg h-full relative mx-4 md:mx-2"
       key={service.id}
     >
       <div className="w-full h-[40%]">
@@ -16,7 +16,7 @@ const ServiceCard = ({ service }) => {
       </div>
 
       <div className="px-3 py-5 h-[60%]">
-        <div className="text-center">
+        <div className="flex flex-col justify-between h-full text-center">
           <h3 className="font-bold text-2xl">{service.name}</h3>
           <p className="pt-2">{service.description}</p>
 
