@@ -73,7 +73,7 @@ const Navbar = ({ handleMode, darkMode }) => {
           onClick={handleMode}
           className="z-30 sm:ml-[3f0rem] md:mfl-0 cursor-pointer dark:text-gray-800"
         >
-          {darkMode ? <FaMoon size={20} /> : <FaLightbulb size={20} />}
+          {darkMode ? <FaLightbulb size={20}/> : <FaMoon size={20} />}
         </div>
       </div>
 

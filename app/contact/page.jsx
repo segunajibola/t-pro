@@ -33,8 +33,8 @@ const MainContact = () => (
         Reach Us
       </motion.p>
     </div>
-    <div className="mt-10">
-      <p className="w-[80%] mx-auto">
+    <div className="mt-10 w-[80%] mx-auto">
+      <p className="">
         We would love to hear from you! Our team is dedicated to providing you
         with exceptional customer service and support. If you have any
         questions, comments, or concerns, please feel free to reach out to us
@@ -42,8 +42,8 @@ const MainContact = () => (
       </p>
 
       <div className="my-10 flex flex-col gap-3">
-        <p>Email: [insert email address here]</p>
-        <p>Phone: [insert phone number here]</p>
+        <a href="mailto:em@i.l">Email: [insert email address here]</a>
+        <a href="tel:+2347085596323">Phone: +2347085596323</a>
         <p>Address: [insert physical address here]</p>
       </div>
 
@@ -51,11 +51,55 @@ const MainContact = () => (
         Alternatively, you can also use the contact form below to send us a
         message directly. Please provide as much detail as possible so that we
         can assist you in the best way possible. We strive to respond to all
-        inquiries within 24-48 hours. Thank you for choosing our website for
-        your needs. We value your feedback and look forward to hearing from you
-        soon!
+        inquiries within 24-48 hours.
+      </p>
+      <p className="mt-10">
+        Thank you for choosing our website for your needs. We value your
+        feedback and look forward to hearing from you soon!
       </p>
     </div>
+    <form
+      method="POST"
+      action="https://formsubmit.co/cfd3b6bc430690ebff065253cdfdb7b5"
+      className="relative flex flex-col max-w-[600px] w-[80%] mx-auto mt-20 md:mt-16"
+    >
+      <input
+        className="bg-gray-300 dark:bg-gray-300 rounded-lg p-2 outline-none placeholder:text-gray-600"
+        type="text"
+        placeholder="Name"
+        name="name"
+        required
+      />
+      <input
+        className="bg-gray-300 dark:bg-gray-300 my-4 p-2 rounded-lg outline-none placeholder:text-gray-600"
+        type="email"
+        placeholder="Email"
+        name="email"
+        required
+      />
+      <input
+        type="text"
+        name="subject"
+        placeholder="Subject"
+        className="bg-gray-300 dark:bg-gray-300 mb-4 p-2 rounded-lg outline-none placeholder:text-gray-600"
+      />
+      <textarea
+        className="bg-gray-300 dark:bg-gray-300 rounded-lg p-2 outline-none placeholder:text-gray-600"
+        name="message"
+        rows="10"
+        placeholder="Message"
+        required
+      ></textarea>
+      <input
+        type="hidden"
+        name="_next"
+        value="https://www.segunajibola.com/thankyou"
+      />
+      <input type="hidden" name="_captcha" value="false" />
+      <button className="bg-gray-300 dark:bg-gray-100 border-2 hover hover:bg-gray-100 hover:border-gray-200 px-4 py-3 my-8 mx-auto flex items-center dark:border-gray-500 dark:hover:bg-gray-300 dark:hover:border-gray-800">
+        Send mail
+      </button>
+    </form>
   </div>
 );
 
