@@ -17,23 +17,27 @@ const ParticularService = ({ params }) => {
   const newServiceName = splitStr.charAt(0).toUpperCase() + splitStr.slice(1);
 
   return (
-    <div className={`${styles.innerWidth} w-[80%] mx-auto pt-24 pb-12`}>
-      <div>
-        {services
-          .filter((service) => service.name.toUpperCase() === newServiceName.toUpperCase())
-          .map((service) => (
-            <div className="">
-              <Image
-                src={service.image}
-                alt=""
-                width={400}
-                height={200}
-                className=""
-              />
-              {service.name}
-            </div>
-          ))}
-      </div>
+    <div className={`${styles.innerWidth} w-[80%] mx-auto pt-20 pb-12`}>
+      {services
+        .filter(
+          (service) =>
+            service.name.toUpperCase() === newServiceName.toUpperCase()
+        )
+        .map((service) => (
+          <div
+            className="w-[100%] border-4 border-
+            red-500"
+          >
+            <Image
+              src={service.image}
+              alt=""
+              width={400}
+              height={100}
+              className="w-full h-[200px] bg-cover object-cover object-center"
+            />
+            <h2 className="text-center text-xl my-10">{service.name}</h2>
+          </div>
+        ))}
     </div>
   );
 };

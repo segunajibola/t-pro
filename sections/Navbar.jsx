@@ -11,6 +11,7 @@ import {
   FaWhatsapp,
   FaTimes,
 } from "react-icons/fa";
+import styles from "../styles/index"
 
 const Navbar = ({ handleMode, darkMode }) => {
   const [nav, setNav] = useState(false);
@@ -42,24 +43,24 @@ const Navbar = ({ handleMode, darkMode }) => {
           <Link
             href="/"
             onClick={() => window.scrollTo(0, 0)}
-            className="cursor-pointer"
+            className={`${styles.navHover}`}
           >
             Home
           </Link>
           <span>|</span>
-          <li className="cursor-pointer hover:scale-110">
+          <li className={`${styles.navHover}`}>
             <Link href="/about">About</Link>
           </li>
           <span>|</span>
-          <li className="cursor-pointer">
+          <li className={`${styles.navHover}`}>
             <a href="/#services">Services</a>
           </li>
           <span>|</span>
-          <li className="cursor-pointer">
+          <li className={`${styles.navHover}`}>
             <Link href="/beauty">Make-up</Link>
           </li>
           <span>|</span>
-          <li className="cursor-pointer">
+          <li className={`${styles.navHover}`}>
             <Link href="/contact">Contact</Link>
           </li>
           <span>|</span>
