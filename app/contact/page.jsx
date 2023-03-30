@@ -7,8 +7,8 @@ import "../../styles/gradient.css";
 import styles from "../../styles";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 import Image from "next/image";
-import style from "../globals.css";
-import styless from "./page.module.css";
+// import style from "../globals.css";
+import style from "./page.module.css";
 
 const MainContact = () => (
   <div className={`${styles.innerWidth} w-[80%] mx-auto pt-24 pb-12`}>
@@ -98,7 +98,7 @@ const MainContact = () => (
         value="https://www.segunajibola.com/thankyou"
       />
       <input type="hidden" name="_captcha" value="false" />
-      <button id={styless.button} className="bg-gray-300 rounded-lg text-lg dark:bg-gray-100 border-2 border-red-500 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 mx-auto flex items-center dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800">
+      <button className={`${style.button} bg-gray-300 rounded-lg text-lg dark:bg-gray-100 border-2 border-red-500 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 mx-auto flex items-center dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800`}>
         Send mail
       </button>
     </form>
