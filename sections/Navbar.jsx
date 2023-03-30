@@ -17,11 +17,10 @@ const Navbar = ({ handleMode, darkMode }) => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <nav
-      // motion.nav
-      // variants={navVariants}
-      // initial="hidden"
-      // whileInView="show"
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
       className="p-6 fixed z-20 w-full h-[80px] shadow-sm flex justify-between items-center bg-gray-200 dark:bg-gray-500 text-gray-700 dark:text-gray-300"
     >
       <Link
@@ -118,7 +117,7 @@ const Navbar = ({ handleMode, darkMode }) => {
           </Link>
         </li>
       </ul>
-    </nav>
+    </motion.nav>
   );
 };
 
