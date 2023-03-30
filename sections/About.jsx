@@ -5,6 +5,7 @@ import { TypingText } from "../components";
 import "../styles/gradient.css";
 import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
+import Link from "next/link"
 
 const About = () => (
   <section
@@ -32,13 +33,13 @@ const About = () => (
         viewport={{ once: false, amount: 0.25 }}
         className={`mx-auto flex justify-center items-center md:items-end flex-col md:w-1/2 text-center md:text-right`}
       >
-          <motion.h2
+        <motion.h2
           variants={fadeIn("up", "tween", 0.1, 0.3)}
           className="flex justify-end mt-[10px] font-normal mr-3 text-[19px] md:text-[23px] dark:text-white"
         >
           T-Pro Signature: The Art Of Beauty
         </motion.h2>
-        
+
         <motion.p
           variants={fadeIn("up", "tween", 0.1, 0.3)}
           className="mt-[8px] font-normal mr-3 text-[17px] md:text-[20px] text-secondary-white dark:text-white"
@@ -57,9 +58,14 @@ const About = () => (
           desired look and feel. Thank you for choosing our website for all your
           beauty, bead making, and event decoration needs! */}
         </motion.p>
-          <button className="bg-gray-300 p-3 my-3 mr-3 dark:text-white rounded-md">
+        <button className="bg-gray-100 p-3 my-3 mr-3 dark:text-white rounded-md">
+          <Link
+            href="/about"
+            className=""
+          >
             More About Us
-          </button>
+          </Link>
+        </button>
       </motion.div>
       <div className="flex flex-col justify-center w-full mt-5 md:mt-0 md:w-[50%]">
         <img src="/wedding-makeup.jpg" alt="" className="h-[80%] w-[100%]" />
