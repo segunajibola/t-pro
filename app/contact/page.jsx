@@ -102,9 +102,7 @@ const MainContact = () => (
         Send mail
       </button>
     </form>
-    <button className="bg-gray-300 rounded-lg text-lg dark:bg-gray-100 border-2 border-red-500 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 mx-auto flex items-center dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800">
-        Send mail
-      </button>
+    {/* https://api.whatsapp.com/send?phone=2348105729893&text=tergrg%20sdfsdf */}
   </div>
 );
 
