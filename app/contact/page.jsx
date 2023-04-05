@@ -28,11 +28,12 @@ export default function MainContact() {
   }
 
   function sendToWhatsApp() {
-
+    window.open(`https://api.whatsapp.com/send?phone=2347085596323&text=Name:%20${formData.name}%0ASubject:%20${formData.subject}%0A${formData.message}%0AEmail:%20${formData.email}`, "_blank")
   }
+  // https://wa.me/c/
 
   function sendToMail() {
-    window.open(`https://api.whatsapp.com/send?phone=2348105729893&text=${formData.message}%0AName:%20${formData.name}%0AEmail:%20${formData.email}%0ASubject:%20${formData.subject}`, "_blank")
+    // window.open(`https://api.whatsapp.com/send?phone=2348105729893&text=${formData.message}%0AName:%20${formData.name}%0AEmail:%20${formData.email}%0ASubject:%20${formData.subject}`, "_blank")
   }
 
   return (
