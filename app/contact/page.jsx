@@ -139,15 +139,15 @@ export default function MainContact() {
             value="https://www.segunajibola.com/thankyou"
           /> */}
           <input type="hidden" name="_captcha" value="false" />
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row justify-between gap-3">
             <button
-              className={`${style.button} bg-gray-400 rounded-lg text-lg dark:bg-gray-100 border-2 border-yellow-800 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 mx-auto dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800`}
+              className={`${style.button} bg-gray-400 rounded-lg text-lg dark:bg-gray-100 border-2 border-yellow-800 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 w-[80%] mx-auto dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800`}
               onClick={sendToWhatsApp}
             >
               Send to WhatsApp <FaWhatsapp size={20} className="ml-2" />
             </button>
             <button
-              className={`${style.button} bg-gray-400 rounded-lg text-lg dark:bg-gray-100 border-2 border-yellow-800 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 mx-auto dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800`}
+              className={`${style.button} bg-gray-400 rounded-lg text-lg dark:bg-gray-100 border-2 border-yellow-800 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 w-[80%] mx-auto dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800 disabled`}
               onClick={sendToMail}
             >
               Send to mail
