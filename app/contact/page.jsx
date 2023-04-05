@@ -112,14 +112,14 @@ export default function MainContact() {
             type="email"
             placeholder="Email  (optional for WhatsApp)"
             name="email"
-            value={formData.name}
+            value={formData.email}
             onChange={handleChange}
             required
           />
           <input
             type="text"
             name="subject"
-            value={formData.name}
+            value={formData.subject}
             onChange={handleChange}
             placeholder="Subject  (optional for WhatsApp)"
             className="bg-gray-300 dark:bg-gray-300 mb-4 p-2 rounded-lg outline-none placeholder:text-gray-600"
@@ -127,17 +127,17 @@ export default function MainContact() {
           <textarea
             className="bg-gray-300 dark:bg-gray-300 rounded-lg p-2 outline-none placeholder:text-gray-600"
             name="message"
-            value={formData.name}
+            value={formData.message}
             onChange={handleChange}
             rows="10"
             placeholder="Message"
             required
           ></textarea>
-          <input
+          {/* <input
             type="hidden"
             name="_next"
             value="https://www.segunajibola.com/thankyou"
-          />
+          /> */}
           <input type="hidden" name="_captcha" value="false" />
           <div className="flex justify-between">
             <button
