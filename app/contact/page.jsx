@@ -95,7 +95,7 @@ export default function MainContact() {
         </div>
         <form
           method="POST"
-          action="https://formsubmit.co/cfd3b6bc430690ebff065253cdfdb7b5"
+          // action="https://formsubmit.co/cfd3b6bc430690ebff065253cdfdb7b5"
           className="relative flex flex-col max-w-[600px] w-[80%] mx-auto mt-20 md:mt-16"
         >
           <input
