@@ -9,6 +9,7 @@ import { fadeIn, staggerContainer } from "../../utils/motion";
 import Image from "next/image";
 // import style from "../globals.css";
 import style from "./page.module.css";
+import { FaWhatsapp } from "react-icons/fa";
 
 const MainContact = () => (
   <div className="bg-gray-200 dark:bg-gray-400">
@@ -103,12 +104,12 @@ const MainContact = () => (
         <input type="hidden" name="_captcha" value="false" />
         <div className="flex justify-between">
           <button
-          className={`${style.button} bg-gray-400 rounded-lg text-lg dark:bg-gray-100 border-2 border-yellow-800 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 mx-auto flex items-center dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800`}
+          className={`${style.button} bg-gray-400 rounded-lg text-lg dark:bg-gray-100 border-2 border-yellow-800 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 mx-auto dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800`}
         >
-          Send to WhatsApp
+          Send to WhatsApp <FaWhatsapp size={20} className="ml-2"/>
         </button>
         <button
-          className={`${style.button} bg-gray-400 rounded-lg text-lg dark:bg-gray-100 border-2 border-yellow-800 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 mx-auto flex items-center dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800`}
+          className={`${style.button} bg-gray-400 rounded-lg text-lg dark:bg-gray-100 border-2 border-yellow-800 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 mx-auto dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800`}
         >
           Send to mail
         </button>
