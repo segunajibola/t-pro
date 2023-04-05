@@ -27,9 +27,13 @@ export default function MainContact() {
     }));
   }
 
-  function sendToWhatsApp() {}
+  function sendToWhatsApp() {
 
-  function sendToMail() {}
+  }
+
+  function sendToMail() {
+    window.open(`https://api.whatsapp.com/send?phone=2348105729893&text=${formData.message}%0AName:%20${formData.name}%0AEmail:%20${formData.email}%0ASubject:%20${formData.subject}`, "_blank")
+  }
 
   return (
     <div className="bg-gray-200 dark:bg-gray-400">
