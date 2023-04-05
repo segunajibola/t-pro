@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion";
 import { TypingText } from "../../components";
 import "../../styles/gradient.css";
@@ -11,7 +11,16 @@ import Image from "next/image";
 import style from "./page.module.css";
 import { FaWhatsapp } from "react-icons/fa";
 
-const MainContact = () => (
+export default function MainContact() {
+
+  const [data, setMeme] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+})
+
+  return (
   <div className="bg-gray-200 dark:bg-gray-400">
     <div
       className={`${styles.innerWidth} w-[80%] mx-auto pt-24 pb-12`}
@@ -119,6 +128,4 @@ const MainContact = () => (
       {/* https://api.whatsapp.com/send?phone=2348105729893&text=tergrg%20sdfsdf */}
     </div>
   </div>
-);
-
-export default MainContact;
+)};
