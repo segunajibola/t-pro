@@ -98,7 +98,9 @@ const MainContact = () => (
         value="https://www.segunajibola.com/thankyou"
       />
       <input type="hidden" name="_captcha" value="false" />
-      <button className={`${style.button} bg-gray-600 rounded-lg text-lg dark:bg-gray-100 border-2 border-gray-800 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 mx-auto flex items-center dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800`}>
+      <button
+        className={`${style.button} bg-gray-400 rounded-lg text-lg dark:bg-gray-100 border-2 border-yellow-800 hover:bg-gray-100 hover:border-red-200 px-4 py-3 my-8 mx-auto flex items-center dark:border-gray-900 dark:hover:bg-gray-300 dark:hover:border-gray-800`}
+      >
         Send mail
       </button>
     </form>
