@@ -28,7 +28,7 @@ export default function MainContact() {
   }
 
   function sendToWhatsApp() {
-    window.open(`https://api.whatsapp.com/send?phone=2347085596323&text=Name:%20${formData.name}%0ASubject:%20${formData.subject}%0A${formData.message}%0AEmail:%20${formData.email}`, "_blank")
+    window.open(`https://api.whatsapp.com/send?phone=2347085596323&text=Name:%20${formData.name}%0A%0ASubject:%20${formData.subject}%0A%0AMessage:%20${formData.message}%0A%0AEmail:%20${formData.email}`, "_blank")
   }
   // https://wa.me/c/
 
