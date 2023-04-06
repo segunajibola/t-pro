@@ -7,7 +7,10 @@ import "../../styles/gradient.css";
 import styles from "../../styles";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 import Image from "next/image";
+import { faqHome } from "../../data/faqHome";
 import services from "../../data/services";
+import { Faqs } from "../../sections";
+
 
 const ParticularService = ({ params }) => {
   const { serviceName } = params;
@@ -46,6 +49,9 @@ const ParticularService = ({ params }) => {
               </button>
             </div>
           </div>
+        ))}
+        {faqHome.map(faq => (
+          <Faqs faqHome={faq}/>
         ))}
     </div>
   );
