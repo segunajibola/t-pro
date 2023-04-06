@@ -39,7 +39,7 @@ const ParticularService = ({ params }) => {
               <p className="w-[80%] mx-auto">
                 {service.description}
               </p>
-              <button className="bg-gray-500 dark:bg-gray-700 p-3 my-3 text-white rounded-md text-center">
+              <button className="bg-gray-500 dark:bg-gray-700 p-3 my-3 text-white rounded-md text-center flex justify-center">
                 <a href="" className="">
                   Book a session
                 </a>

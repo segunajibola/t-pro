@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { faqHome } from "../data/faq.json";
+import styles from "../styles";
+import "../styles/gradient.css";
+import { faqHome } from "../data/faqHome";
 
 const Faqs = () => {
-  // In order to turn off linting rule for a particular line in JSHint
-  // eslint-disable-next-line
   const [faqs, setFaqs] = useState(faqHome);
 
   return (
     <div className="faq">
-      <div className="p-10 mx-auto bg-white rounded shadow-lg">
-        <h3 className="px-8 py-2 font-bold text-center bg-grey-lightest ">
+      <div className={`${styles.paddings} md:py-12 bg-gray-200 dark:bg-gray-600 relative z-10`}>
+        <h3 className="px-8 py-2 font-bold text-[20px] md:text-[30px] text-center bg-grey-lightest ">
           Frequently Asked Questions
         </h3>
         <div className="flex justify-center mx-auto mt-2">
