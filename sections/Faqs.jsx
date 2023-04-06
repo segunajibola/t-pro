@@ -19,9 +19,9 @@ const Faqs = () => {
         </div>
         <div className="mx-4 mt-2 question-wrap">
           {faqs.map((faq) => (
-            <details className="py-4 border-b question border-grey-lighter">
-              <summary className="flex items-center font-bold text-left">
-                <h2>{faq.question}</h2>
+            <details className="py-4 question">
+              <summary className="flex items-center text-[18px] md:text-[24px] text-left">
+                <h2 className="cursor-pointer">{faq.question}</h2>
 
                 <button className="ml-auto">
                   <svg
@@ -33,7 +33,7 @@ const Faqs = () => {
                   </svg>
                 </button>
               </summary>
-              <div className="mt-4 leading-normal text-left text-md">
+              <div className="mt-4 leading-normal text-left text-[14px] md:text-[20px]">
                 {faq.answer}
               </div>
             </details>
