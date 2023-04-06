@@ -25,22 +25,21 @@ const ParticularService = ({ params }) => {
         )
         .map((service) => (
           <div
-            className="w-[100%] border-4 border-
-            red-500"
+            className="w-[100%]"
           >
             <Image
               src={service.image}
               alt=""
               width={400}
               height={100}
-              className="w-full h-[200px] bg-cover object-cover object-center"
+              className="w-full h-[50%] bg-cover object-cover object-center"
             />
             <div className="w-[90%] mx-auto text-center">
               <h2 className="text-xl md:text-2xl font-semibold my-10">{service.name}</h2>
               <p className="w-[80%] mx-auto">
                 {service.description}
               </p>
-              <button className="bg-gray-500 dark:bg-gray-700 p-3 my-3 text-white rounded-md text-center">
+              <button className="bg-gray-500 dark:bg-gray-700 p-3 my-3 text-white rounded-md text-center flex justify-center">
                 <a href="" className="">
                   Book a session
                 </a>
