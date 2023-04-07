@@ -11,10 +11,12 @@ const Gallery = () => {
         <div className="col-span-1">
           <div className="w-full h-full">
             <Image
-              scr="/decoration.jpg"
+              src="/makeup.jpg"
               width={400}
               height={400}
               className="rounded-t-2xl object-cover object-center w-full h-full"
+              alt=""
+              priority
             />
           </div>
         </div>
