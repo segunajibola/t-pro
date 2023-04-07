@@ -1,7 +1,7 @@
 "use client";
 
 // import styles from "./page.module.css";
-import { Hero, About, Services, Gallery, Metrics, Faqs } from "../sections";
+import { Hero, About, Services, Gallery, Metrics, Testimonials, Faqs } from "../sections";
 import { faqHome } from "../data/faqHome";
 
 export default function Home() {
@@ -12,6 +12,7 @@ export default function Home() {
       <Services />
       <Gallery />
       <Metrics />
+      <Testimonials />
       <Faqs faqHome={faqHome} />
       {/* 
       Testimonials, 

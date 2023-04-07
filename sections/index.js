@@ -4,6 +4,7 @@ import About from "./About";
 import Services from "./Services";
 import Gallery from "./Gallery";
 import Metrics from "./Metrics";
+import Testimonials from "./Testimonials";
 import Faqs from "./Faqs";
 import Footer from "./Footer";
 
@@ -14,6 +15,7 @@ export {
     Services,
     Gallery,
     Metrics,
+    Testimonials,
     Faqs, 
     Footer
 };
