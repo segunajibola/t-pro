@@ -8,11 +8,14 @@ import styles from "../../styles";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 import Image from "next/image";
 import { faqHome } from "../../data/faqHome";
+// import faqHome from "../../data/faqHome";
 import services from "../../data/services";
 import { Faqs } from "../../sections";
 
 
+
 const ParticularService = ({ params }) => {
+  // const [faqData, SetFaqData] = React.useState(faqHome)
   const { serviceName } = params;
 
   const splitStr = serviceName.split("-").join(" ");
@@ -52,9 +55,10 @@ const ParticularService = ({ params }) => {
             </div>
           </div>
         ))}
-        {faqHome.map(faq => (
+        
+        {Array.isArray(faqHome) ? faqHome.map(faq => (
           <Faqs faqHome={faq}/>
-        ))}
+        )) : "empty"}
     </div>
   );
 };
