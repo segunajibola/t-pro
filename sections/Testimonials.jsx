@@ -18,7 +18,7 @@ const Testimonials = () => {
       <section
       className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10 w-full overflow-hidden`}
     >
-      <div className="gradient-04 z-0" />
+      <div className="gradient-01 z-0" />
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -35,7 +35,7 @@ const Testimonials = () => {
           variants={fadeIn("up", "tween", 0.2, 1)}
           className="mt-[8px] font-normal text-[14px] md:text-[24px] text-center text-secondary-white dark:text-white"
         >
-          Quantitative results speak volumes
+          What Others Are Saying
         </motion.p>
       <Swiper
         spaceBetween={30}
@@ -61,7 +61,7 @@ const Testimonials = () => {
                 <div className="mb-2">{testimonial.position}</div>
               </figcaption>
               <blockquote className="mx-auto">
-                <p className="text-lg font-semibold mx-2 dark:text-gray-900">
+                <p className="text-lg font-normal mx-2 dark:text-gray-900">
                   {testimonial.text}
                 </p>
               </blockquote>

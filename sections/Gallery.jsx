@@ -31,7 +31,7 @@ const Gallery = () => {
       >
         Explore Our Creations
       </motion.p>
-      <div className="grid grid-cols-2 grid-rows-5 md:grid-cols-3 md:grid-rows-3 gap-4 mt-16 md:mt-32">
+      <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 gap-4 mt-16 md:mt-32 border-4 border-red-500">
         <div className="col-span-1">
           <div className="w-full h-full">
             <Image
@@ -92,7 +92,7 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="col-span-1 md:col-span-2">
+        <div className="col-span-1 md:col-span-2 border-4">
           <div className="w-full h-full">
             <Image
               src="/bead-making.jpg"
