@@ -68,7 +68,7 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="col-span-1 md:col-span-2">
+        <div className="col-span-2 md:col-span-2">
           <div className="w-full h-full">
             <Image
               src="/makeup.jpg"
@@ -92,7 +92,7 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="col-span-2 md:col-span-2">
+        <div className="col-span-1 md:col-span-2">
           <div className="w-full h-full">
             <Image
               src="/bead-making.jpg"
