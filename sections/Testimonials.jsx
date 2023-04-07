@@ -1,18 +1,42 @@
 "use client";
 
+import React from "react";
 import testimonials from "../data/testimonials";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
+import styles from "../styles";
+import { motion } from "framer-motion";
+import { TypingText } from "../components";
+import "../styles/gradient.css";
+import { fadeIn, staggerContainer } from "../utils/motion";
 
 const Testimonials = () => {
   return (
-    <div
-      id="testimonials"
-      className="w-full overflow-hidden dark:bg-gray-100 dark:text-gray-800"
+      <section
+      className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10 w-full overflow-hidden`}
     >
+      <div className="gradient-04 z-0" />
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+      >
+        <TypingText
+          title="| Testimonials"
+          textStyles="text-center md:text-[30px] font-bold dark:text-gray-200"
+        />
+
+        <motion.p
+          variants={fadeIn("up", "tween", 0.2, 1)}
+          className="mt-[8px] font-normal text-[14px] md:text-[24px] text-center text-secondary-white dark:text-white"
+        >
+          Quantitative results speak volumes
+        </motion.p>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -45,7 +69,8 @@ const Testimonials = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+      </motion.div>
+    </section>
   );
 };
 
