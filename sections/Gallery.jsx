@@ -12,7 +12,7 @@ const Gallery = () => {
     <section
       className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10`}
     >
-    <div className="gradient-02 z-0" />
+    <div className="gradient-03 z-0" />
     <motion.div
       variants={staggerContainer}
       initial="hidden"
