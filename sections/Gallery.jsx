@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../styles";
+import { motion } from "framer-motion";
+import { TypingText, ServiceCard } from "../components";
+import "../styles/gradient.css";
+import services from "../data/services";
+import { fadeIn, staggerContainer } from "../utils/motion";
+
 
 const Gallery = () => {
   return (
