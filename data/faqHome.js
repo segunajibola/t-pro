@@ -106,41 +106,29 @@ export const beauty = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
   },
   {
-    id: 11,
-    question: "Can you travel to my location for my makeup session?",
+    id: 12,
+    question: "What is your pricing structure for makeup services?",
     answer:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
   },
   {
-    id: 11,
-    question: "Can you travel to my location for my makeup session?",
+    id: 13,
+    question: "Do you offer makeup services for photoshoots or video shoots?",
     answer:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
   },
   {
-    id: 11,
-    question: "Can you travel to my location for my makeup session?",
+    id: 14,
+    question: "Can you provide me with makeup tips and recommendations?",
     answer:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
   },
   {
-    id: 11,
-    question: "Can you travel to my location for my makeup session?",
+    id: 15,
+    question: "Do you offer makeup lessons or classes?",
     answer:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
-  },
-  {
-    id: 11,
-    question: "Can you travel to my location for my makeup session?",
-    answer:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
-  },
-  {
-    id: 11,
-    question: "Can you travel to my location for my makeup session?",
-    answer:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
-  },
+  }
 ];
 
 export const bead_making = [
