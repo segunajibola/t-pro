@@ -10,7 +10,9 @@ const Gallery = () => {
     >
       <div className="grid grid-cols-2 grid-rows-5 md:grid-cols-3 md:grid-rows-3 gap-3">
         <div className="col-span-1">
-          <div className="bg-red-500 w-full h-full"></div>
+          <div className="bg-red-500 w-full h-full">
+            Hello
+          </div>
         </div>
         <div className="col-span-1 row-span-2 md:row-span-1">
           <div className="bg-green-500 w-full h-full"></div>
