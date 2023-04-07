@@ -1,7 +1,7 @@
 const testimonials = [
     {
       id: 1,
-      image: "/decoration.png",
+      image: "/decoration.jpg",
       alt: "Decoration",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci maxime fugit.",
       name: "John Doe",
@@ -9,7 +9,7 @@ const testimonials = [
     },
     {
       id: 2,
-      image: "/makeup.png",
+      image: "/makeup.jpg",
       alt: "Make-up",
       text: "Lorem ipsum dolor sit amdipisci maxime eligendi tempora tempore, consequuntur nihil",
       name: "John Doe",
