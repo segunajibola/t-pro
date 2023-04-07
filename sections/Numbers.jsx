@@ -31,10 +31,6 @@ const Numbers = () => {
         Quantitative results speak volumes
       </motion.p>
       <div className="relative h-[300px] pt-[150px]">
-        <div className="text-center">
-          <h3 className="text-4xl">Metrics show our success</h3>
-          <h4 className="my-2 text-xl">Quantitative results speak volumes</h4>
-        </div>
         <div className="grid grid-cols-2 md:grid-cols-4 md:w-11/12 mx-auto pt-4 text-2xl">
           <div className="text-center">
             <CountUp end={10} enableScrollSpy />
