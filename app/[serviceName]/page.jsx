@@ -18,14 +18,21 @@ const ParticularService = ({ params }) => {
   // const [faqData, SetFaqData] = React.useState(faqHome)
   const { serviceName } = params;
 
-  console.log("serviceName", serviceName, typeof serviceName)
 
 
   const splitStr = serviceName.split("-").join(" ");
 
   const newServiceName = splitStr.charAt(0).toUpperCase() + splitStr.slice(1);
 
+  console.log("serviceName", serviceName, typeof serviceName)
+  console.log("splitStr", splitStr, typeof splitStr)
+  console.log("newServiceName", newServiceName, typeof newServiceName)
+
+
   console.log("faqInServices", faqHome, typeof faqHome)
+
+  // const arrName = serviceName === beauty ? beauty : serviceName === 
+  // bead making ? bead : serviceName === event decoration ? event
 
   return (
     <div className={`${styles.innerWidth} w-[80%] mx-auto pt-20 pb-12`}>
