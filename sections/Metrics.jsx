@@ -9,7 +9,7 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 const Metrics = () => {
   return (
     <section
-      className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10 h-[500px]`}
+      className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10 h-[600px]`}
     >
       <div className="gradient-04 z-0" />
       <motion.div

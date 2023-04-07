@@ -13,6 +13,7 @@ const Faqs = ({faqHome}) => {
       className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10`}
     >
       <div className="gradient-03 z-0" />
+
       <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -54,6 +55,14 @@ const Faqs = ({faqHome}) => {
         </div>
       </div>
       </motion.div>
+      <div className="flex justify-center">
+      <motion.img
+        variants={fadeIn("up", "tween", 0.1, 0.3)}
+        src="/arrow-down.svg"
+        alt="arrow down"
+        className="w-[50px] h-[50px] object-contain my-[28px] bg-gray-300 p-3 dark:bg-gray-500"
+      />
+    </div>
     </section>
   );
 };
