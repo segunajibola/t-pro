@@ -1,8 +1,16 @@
 import React from "react";
 import CountUp, { useCountUp } from "react-countup";
+import styles from "../styles";
+import { motion } from "framer-motion";
+import { TypingText, ServiceCard } from "../components";
+import "../styles/gradient.css";
+import { fadeIn, staggerContainer } from "../utils/motion";
 
 const Numbers = () => {
   return (
+    <
+      className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10`}
+    >
     <div className="my-4 w-[80%] h-[500px] mx-auto">
       <div className="relative h-[300px] pt-[150px]">
         <div className="text-center">
@@ -33,6 +41,7 @@ const Numbers = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
