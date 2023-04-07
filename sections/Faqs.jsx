@@ -1,9 +1,18 @@
+import React from "react";
 import styles from "../styles";
 import "../styles/gradient.css";
+import { motion } from "framer-motion";
+import { TypingText, ServiceCard } from "../components";
+import "../styles/gradient.css";
+import { fadeIn, staggerContainer } from "../utils/motion";
+
 
 const Faqs = ({faqHome}) => {
   return (
-    <div className="faq">
+    <section
+      className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10`}
+    >
+      <div className="gradient-03 z-0" />
       <div className={`${styles.paddings} md:py-12 bg-gray-200 dark:bg-gray-600 relative z-10`}>
         <h3 className="px-8 py-2 font-semibold text-[20px] md:text-[30px] text-center bg-grey-lightest ">
           Frequently Asked Questions
@@ -36,7 +45,7 @@ const Faqs = ({faqHome}) => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
