@@ -31,7 +31,7 @@ const Gallery = () => {
       >
         Explore Our Creations
       </motion.p>
-      <div className="grid grid-cols-2 grid-rows-5 md:grid-cols-3 md:grid-rows-3 gap-4">
+      <div className="grid grid-cols-2 grid-rows-5 md:grid-cols-3 md:grid-rows-3 gap-4 mt-16 md:mt-32">
         <div className="col-span-1">
           <div className="w-full h-full">
             <Image
