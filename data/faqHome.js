@@ -30,3 +30,11 @@ export const faqHome = [
       "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum."
     }
   ]  
+
+  export const beauty = [
+    {
+      "id": 1,
+      "question": "What services do you offer?",
+      "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum."
+    }
+  ]

@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "../styles";
 import "../styles/gradient.css";
 
-const Faqs = ({ faqHome }) => {
+const Faqs = ({faqHome}) => {
 
   console.log("faqInFaq", faqHome, typeof faqHome)
   // const [faqs, setFaqs] = useState(faqHome);
