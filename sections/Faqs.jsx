@@ -1,12 +1,7 @@
-import { useState } from "react";
 import styles from "../styles";
 import "../styles/gradient.css";
 
 const Faqs = ({faqHome}) => {
-
-  console.log("faqInFaq", faqHome, typeof faqHome)
-  // const [faqs, setFaqs] = useState(faqHome);
-
   return (
     <div className="faq">
       <div className={`${styles.paddings} md:py-12 bg-gray-200 dark:bg-gray-600 relative z-10`}>
