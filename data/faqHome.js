@@ -30,3 +30,27 @@ export const faqHome = [
       "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum."
     }
   ]  
+
+  export const beauty = [
+    {
+      "id": 1,
+      "question": "Beauty services do you offer?",
+      "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum."
+    }
+  ]
+
+  export const bead_making = [
+    {
+      "id": 1,
+      "question": "Bead services do you offer?",
+      "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum."
+    }
+  ]
+
+  export const event_decoration = [
+    {
+      "id": 1,
+      "question": "Event services do you offer?",
+      "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum."
+    }
+  ]

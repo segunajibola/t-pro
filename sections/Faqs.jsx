@@ -1,15 +1,16 @@
 import { useState } from "react";
 import styles from "../styles";
 import "../styles/gradient.css";
-import { faqHome } from "../data/faqHome";
 
-const Faqs = () => {
-  const [faqs, setFaqs] = useState(faqHome);
+const Faqs = ({faqHome}) => {
+
+  console.log("faqInFaq", faqHome, typeof faqHome)
+  // const [faqs, setFaqs] = useState(faqHome);
 
   return (
     <div className="faq">
       <div className={`${styles.paddings} md:py-12 bg-gray-200 dark:bg-gray-600 relative z-10`}>
-        <h3 className="px-8 py-2 font-bold text-[20px] md:text-[30px] text-center bg-grey-lightest ">
+        <h3 className="px-8 py-2 font-semibold text-[20px] md:text-[30px] text-center bg-grey-lightest ">
           Frequently Asked Questions
         </h3>
         <div className="flex justify-center mx-auto mt-2">
@@ -18,7 +19,7 @@ const Faqs = () => {
           <span className="inline-block w-1 h-1 rounded-full bg-pure-black"></span>
         </div>
         <div className="mx-4 mt-2 question-wrap">
-          {faqs.map((faq) => (
+          {faqHome.map((faq) => (
             <details className="py-4 question">
               <summary className="flex items-center text-[18px] md:text-[24px] text-left">
                 <h2 className="cursor-pointer">{faq.question}</h2>
