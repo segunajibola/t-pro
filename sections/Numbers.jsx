@@ -6,7 +6,7 @@ const Numbers = () => {
     <div className="my-4 w-[80%] h-[500px] mx-auto">
         <div className="relative h-[300px] pt-[150px]">
           <div className="text-center">
-            <h3 className="text-4xl">Some numbers that matters</h3>
+            <h3 className="text-4xl">Some numbers that m atters</h3>
             <h4 className="my-2 text-xl">
               Our recent achievement shown by numbers
             </h4>

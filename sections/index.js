@@ -13,7 +13,7 @@ export {
     About,
     Services,
     Gallery,
-    Numbers
+    Numbers,
     Faqs, 
     Footer
 };
