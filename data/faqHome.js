@@ -128,7 +128,7 @@ export const beauty = [
     question: "Do you offer makeup lessons or classes?",
     answer:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
-  }
+  },
 ];
 
 export const bead_making = [
@@ -211,7 +211,100 @@ export const bead_making = [
 export const event_decoration = [
   {
     id: 1,
-    question: "Event services do you offer?",
+    question: "What types of events do you offer decoration services for?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 2,
+    question: "Can I see samples of your previous work?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 3,
+    question: "How do I schedule a consultation for my event?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 4,
+    question:
+      "Do you offer themed decorations for specific events, such as weddings or birthdays?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 5,
+    question:
+      "Do you provide event decoration rentals or only decoration services?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 6,
+    question: "What is the cost of your decoration services?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 7,
+    question: "How long does the decoration process take?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 8,
+    question: "Do you offer installation and setup services?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 9,
+    question: "Can you work with my event planner or coordinator?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 10,
+    question:
+      "Can I make changes to my decoration plans after they have been finalized?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 11,
+    question: "What types of decoration materials do you use?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 12,
+    question: "Do you offer floral decoration services?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 13,
+    question: "Do you provide lighting and audiovisual services for events?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 14,
+    question: "Can you work with a specific budget for my event?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 15,
+    question: "Do you offer decoration services for outdoor events?",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
+  },
+  {
+    id: 16,
+    question: "Can I provide my own decoration materials?",
     answer:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque tempore quisquam autem, nisi culpa delectus? Maxime earum temporibus incidunt? Totam alias quasi ratione perspiciatis veritatis voluptatibus fuga, dolorem consequuntur cum.",
   },
