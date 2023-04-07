@@ -8,10 +8,28 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 
 const Numbers = () => {
   return (
-    <
-      className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10`}
+    <section
+      className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10 w-[80%] h-[500px] mx-auto`}
     >
-    <div className="my-4 w-[80%] h-[500px] mx-auto">
+      <div className="gradient-03 z-0" />
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+    >
+        <TypingText
+        title="| Metrics"
+        textStyles="text-center md:text-[30px] font-bold dark:text-gray-200"
+      />
+
+      <motion.p
+        variants={fadeIn("up", "tween", 0.2, 1)}
+        className="mt-[8px] font-normal text-[14px] md:text-[24px] text-center text-secondary-white dark:text-white"
+      >
+        Quantitative results speak volumes
+      </motion.p>
       <div className="relative h-[300px] pt-[150px]">
         <div className="text-center">
           <h3 className="text-4xl">Metrics show our success</h3>
@@ -40,7 +58,7 @@ const Numbers = () => {
           </div>
         </div>
       </div>
-    </div>
+      </motion.div>
     </section>
   );
 };
