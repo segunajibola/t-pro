@@ -23,7 +23,7 @@ const Numbers = () => {
           <div className="text-center">
             <CountUp end={200} enableScrollSpy />
             <span className="inline">+</span>
-            <h5 className="">Successful Deployment</h5>
+            <h5 className="">Events Decorated</h5>
           </div>
           <div className="text-center">
             <CountUp end={14} enableScrollSpy />
