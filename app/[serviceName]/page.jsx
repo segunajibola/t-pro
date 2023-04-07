@@ -19,7 +19,7 @@ const ParticularService = ({ params }) => {
 
   const newServiceName = splitStr.charAt(0).toUpperCase() + splitStr.slice(1);
 
-  console.log("faqInServices", faqHome)
+  console.log("faqInServices", faqHome, typeof faqHome)
 
   return (
     <div className={`${styles.innerWidth} w-[80%] mx-auto pt-20 pb-12`}>
