@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Services from "./Services";
 import Gallery from "./Gallery";
-import Numbers from "./Numbers";
+import Metrics from "./Metrics";
 import Faqs from "./Faqs";
 import Footer from "./Footer";
 
@@ -13,7 +13,7 @@ export {
     About,
     Services,
     Gallery,
-    Numbers,
+    Metrics,
     Faqs, 
     Footer
 };

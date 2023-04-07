@@ -6,7 +6,7 @@ import { TypingText } from "../components";
 import "../styles/gradient.css";
 import { fadeIn, staggerContainer } from "../utils/motion";
 
-const Numbers = () => {
+const Metrics = () => {
   return (
     <section
       className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10 h-[500px]`}
@@ -57,4 +57,4 @@ const Numbers = () => {
   );
 };
 
-export default Numbers;
+export default Metrics;
