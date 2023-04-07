@@ -12,7 +12,7 @@ const Gallery = () => {
     <section
       className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10`}
     >
-    <div className="gradient-02 z-0" />
+    <div className="gradient-03 z-0" />
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -31,7 +31,7 @@ const Gallery = () => {
       >
         Explore Our Creations
       </motion.p>
-      <div className="grid grid-cols-2 grid-rows-5 md:grid-cols-3 md:grid-rows-3 gap-4">
+      <div className="grid grid-cols-2 grid-rows-5 md:grid-cols-3 md:grid-rows-3 gap-4 mt-16 md:mt-32">
         <div className="col-span-1">
           <div className="w-full h-full">
             <Image
@@ -105,6 +105,12 @@ const Gallery = () => {
           </div>
         </div>
       </div>
+      <motion.img
+        variants={fadeIn("up", "tween", 0.2, 0.5)}
+        src="/arrow-down.svg"
+        alt="arrow down"
+        className="w-[50px] h-[50px] object-contain my-[28px] bg-gray-300 p-3 dark:bg-gray-500"
+      />
     </motion.div>
     </section>
   );
