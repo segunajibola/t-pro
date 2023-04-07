@@ -105,6 +105,12 @@ const Gallery = () => {
           </div>
         </div>
       </div>
+      <motion.img
+        variants={fadeIn("up", "tween", 0.3, 0.5)}
+        src="/arrow-down.svg"
+        alt="arrow down"
+        className="w-[50px] h-[50px] object-contain my-[28px] bg-gray-300 p-3 dark:bg-gray-500"
+      />
     </motion.div>
     </section>
   );
