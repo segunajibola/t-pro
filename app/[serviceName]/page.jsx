@@ -8,38 +8,28 @@ import styles from "../../styles";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 import Image from "next/image";
 import {
-  faqHome,
   beauty,
   bead_making,
   event_decoration,
 } from "../../data/faqHome";
-// import faqHome from "../../data/faqHome";
 import services from "../../data/services";
 import { Faqs } from "../../sections";
 
 const ParticularService = ({ params }) => {
-  // const [faqData, SetFaqData] = React.useState(faqHome)
   const { serviceName } = params;
 
-  const splitStr = serviceName.split("-").join(" ");
+  const splitWithSpace = serviceName.split("-").join(" ");
 
-  const splitDash = serviceName.split("-").join("_");
+  const splitWithUnderscore = serviceName.split("-").join("_");
 
-  const newServiceName = splitStr.charAt(0).toUpperCase() + splitStr.slice(1);
-
-  console.log("serviceName", serviceName, typeof serviceName);
-  console.log("splitStr", splitStr, typeof splitStr);
-  console.log("newServiceName", newServiceName, typeof newServiceName);
-  console.log("splitDash", splitDash, typeof splitDash);
-
-  console.log("faqInServices", faqHome, typeof faqHome);
+  const newServiceName = splitWithSpace.charAt(0).toUpperCase() + splitWithSpace.slice(1);
 
   const arrName =
     serviceName === "beauty"
       ? beauty
-      : splitDash === "bead_making"
+      : splitWithUnderscore === "bead_making"
       ? bead_making
-      : splitDash === "event_decoration"
+      : splitWithUnderscore === "event_decoration"
       ? event_decoration
       : "";
 
