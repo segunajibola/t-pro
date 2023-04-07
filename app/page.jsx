@@ -11,6 +11,7 @@ export default function Home() {
       <About />
       <Services />
       <Gallery />
+      
       <Faqs faqHome={faqHome} />
       {/* 
       Testimonials, 
