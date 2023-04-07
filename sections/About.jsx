@@ -41,7 +41,7 @@ const About = () => (
         </motion.h2>
 
         <motion.p
-          variants={fadeIn("up", "tween", 0.1, 0.3)}
+          variants={fadeIn("up", "tween", 0.3, 0.6)}
           className="mt-[8px] font-normal mr-3 text-[17px] md:text-[20px] text-secondary-white dark:text-white"
         >
           Welcome to our world of beauty, creativity, and elegance! Our website

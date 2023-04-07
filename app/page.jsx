@@ -12,11 +12,11 @@ export default function Home() {
       <Services />
       <Gallery />
       <Faqs faqHome={faqHome} />
-      {/* Gallery, 
+      {/* 
       Testimonials, 
       Book Appointment, 
       Special Offers, 
-      Terms and Conditions, 
+      Terms and Conditions, in footer
       Products */}
     </div>
   );
