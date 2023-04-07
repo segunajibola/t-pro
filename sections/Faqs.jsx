@@ -13,6 +13,13 @@ const Faqs = ({faqHome}) => {
       className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10`}
     >
       <div className="gradient-03 z-0" />
+      <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+    >
       <div className={`${styles.paddings} md:py-12 bg-gray-200 dark:bg-gray-600 relative z-10`}>
         <TypingText
         title="| Frequently Asked Questions"
@@ -46,6 +53,7 @@ const Faqs = ({faqHome}) => {
           ))}
         </div>
       </div>
+      </motion.div>
     </section>
   );
 };
