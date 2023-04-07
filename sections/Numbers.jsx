@@ -2,14 +2,14 @@ import React from "react";
 import CountUp, { useCountUp } from "react-countup";
 import styles from "../styles";
 import { motion } from "framer-motion";
-import { TypingText, ServiceCard } from "../components";
+import { TypingText } from "../components";
 import "../styles/gradient.css";
 import { fadeIn, staggerContainer } from "../utils/motion";
 
 const Numbers = () => {
   return (
     <section
-      className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10 w-[80%] h-[500px] mx-auto`}
+      className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10 h-[500px]`}
     >
       <div className="gradient-03 z-0" />
       <motion.div
