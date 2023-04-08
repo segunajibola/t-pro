@@ -82,13 +82,13 @@ const Navbar = ({ handleMode, darkMode }) => {
         onClick={handleClick}
         className="md:hidden z-30 cursor-pointer dark:text-gray-800"
       >
-        {!nav ? <FaBars size={22} /> : <FaTimes size={22} className={nav ? text-white : ""} />}
+        {!nav ? <FaBars size={22} /> : <FaTimes size={22} className={nav ? "text-white" : ""} />}
       </div>
 
       {/* Mobile menu */}
       <ul
         id="nav"
-        className={`rounded-l-full top-0 right-0 w-[35%] bg-gradient-to-r from-gra-1 via-gra-2 to-gra-3 opacity-80 p-10 pl-20 text-white fixed h-full z-20 ease-in-out duration-300 flex flex-col justify-center items-center dark:bg-gray-100 dark:text-gray-800 space-y-8 ${
+        className={`rounded-l-full top-0 right-0 w-[35%] bg-gradient-to-r from-gra-1 dark:from-gray-700 via-gra-2 dark:via-gray-800 to-gra-3 dark:to-gray-400 opacity-90 font-semibold p-10 pl-20 text-gray-200 dark:text-gray-300 fixed h-full z-20 ease-in-out duration-300 flex flex-col justify-center items-center  space-y-8 ${
           nav ? "translate-x-0" : "translate-x-full"
         }`}
       >

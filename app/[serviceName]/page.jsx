@@ -41,7 +41,7 @@ const ParticularService = ({ params }) => {
             service.name.toUpperCase() === newServiceName.toUpperCase()
         )
         .map((service) => (
-          <div className="w-[100%]">
+          <div className="w-[100%] bg-gray-200 dark:bg-gray-600">
             <Image
               src={service.image}
               alt=""
