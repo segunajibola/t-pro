@@ -48,20 +48,25 @@ const About = () => (
           offers a wide range of services in beauty, bead making, and event
           decoration that are tailored to your specific needs and preferences.
         </motion.p>
-        <button className="bg-gray-100 p-3 my-3 mr-3 dark:text-white rounded-md">
-          <Link href="/about" className="">
-            More About Us
-          </Link>
-        </button>
+        <motion.div variants={fadeIn("up", "tween", 0.1, 0.3)}>
+          <button className="bg-gray-100 p-3 my-3 mr-3 dark:text-white rounded-md">
+            <Link href="/about" className="">
+              More About Us
+            </Link>
+          </button>
+        </motion.div>
       </motion.div>
-      <div className="flex flex-col justify-center w-full mt-5 md:mt-0 md:w-[50%]">
+      <motion.div
+        variants={slideIn("right", "tween", 0.1, 0.3)}
+        className="flex flex-col justify-center w-full mt-5 md:mt-0 md:w-[50%]"
+      >
         <motion.img
           variants={slideIn("right", "tween", 0.1, 0.3)}
           src="/wedding-makeup.jpg"
           alt="wedding make-up"
-          className="bg-cfgover object-cover object-top rounded-2xl h-[70%] my-auto w-[100%]"
+          className="object-cover object-top rounded-2xl h-[70%] my-auto w-[100%]"
         />
-      </div>
+      </motion.div>
     </div>
     <div className="flex justify-center">
       <motion.img
