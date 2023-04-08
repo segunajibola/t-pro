@@ -88,7 +88,7 @@ const Navbar = ({ handleMode, darkMode }) => {
       {/* Mobile menu */}
       <ul
         id="nav"
-        className={`top-0 right-0 w-1/2 bg-[#0a192f] p-10 pl-20 text-white fixed h-full z-20 ease-in-out duration-300 flex flex-col justify-center items-center dark:bg-gray-100 dark:text-gray-800 space-y-8 ${
+        className={`rounded-l-full top-0 right-0 w-[35%] bg-gradient-to-r from-gra-1 via-gra-2 to-gra-3 opacity-80 p-10 pl-20 text-white fixed h-full z-20 ease-in-out duration-300 flex flex-col justify-center items-center dark:bg-gray-100 dark:text-gray-800 space-y-8 ${
           nav ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -102,7 +102,7 @@ const Navbar = ({ handleMode, darkMode }) => {
           <Link
             onClick={handleClick}
             className="cursor-pointer"
-            href="/services"
+            href="/#services"
           >
             Services
           </Link>

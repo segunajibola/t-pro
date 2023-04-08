@@ -7,6 +7,7 @@ import styles from "../styles";
 import services from "../data/services";
 import { fadeIn, staggerContainer } from "../utils/motion";
 
+
 const Services = () => (
   <section
     className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10`}
