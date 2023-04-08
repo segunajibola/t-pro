@@ -26,7 +26,7 @@ const Services = () => (
       />
 
       <motion.p
-        variants={fadeIn("up", "tween", 0.2, 1)}
+        variants={fadeIn("up", "tween", 0.2, 0.3)}
         className="mt-[8px] font-normal text-[14px] md:text-[24px] text-center text-secondary-white dark:text-white"
       >
         Specializing in Beauty & Decoration services.
