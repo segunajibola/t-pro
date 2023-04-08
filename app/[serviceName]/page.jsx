@@ -38,17 +38,20 @@ const ParticularService = ({ params }) => {
             service.name.toUpperCase() === newServiceName.toUpperCase()
         )
         .map((service) => (
-          <div className="w-[100%] bg-gray-200 dark:bg-gray-500">
-            <Image
+          <div className="relative z-10 w-[100%] bg-gray-200 dark:bg-gray-500">
+            <div>
+              <Image
               src={service.image}
               alt=""
               width={400}
               height={100}
-              className="w-full h-[50%] bg-cover object-cover object-center"
+              className="w-full h-[50vh] bg-cover object-cover object-center"
             />
+            </div>
 
+            <div className="gradient-04 z-0" />
+            
             <div className="w-[95%] mx-auto text-center">
-              <div className="gradient-05 z-1 h-1 border-4 border-red-500" />
               <h2 className="text-[30px] md:text-[36px] font-semibold my-10">
                 {service.name}
               </h2>

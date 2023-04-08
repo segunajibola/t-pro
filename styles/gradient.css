@@ -42,8 +42,6 @@
   right: 0px;
 
   background: #7aebfb;
-  /* background: #9c5e85; */
-  /* background: #0d292c; */
   filter: blur(190px);
 }
 
@@ -79,8 +77,8 @@
   top: 10%;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(141, 180, 182, 0.04) 0%,
+    rgba(100, 33, 33, 0) 100%
   );
 }
 
