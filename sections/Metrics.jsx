@@ -9,9 +9,9 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 const Metrics = () => {
   return (
     <section
-      className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10 h-[500px]`}
+      className={`${styles.paddings} md:py-24 bg-gray-200 dark:bg-gray-600 relative z-10 h-[600px]`}
     >
-      <div className="gradient-05 z-0" />
+      <div className="gradient-04 z-0" />
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -53,6 +53,14 @@ const Metrics = () => {
           </div>
         </div>
       </motion.div>
+      <div className="flex justify-center">
+        <motion.img
+          variants={fadeIn("up", "tween", 0.1, 0.3)}
+          src="/arrow-down.svg"
+          alt="arrow down"
+          className="w-[50px] h-[50px] object-contain my-[28px] bg-gray-300 p-3 dark:bg-gray-500"
+        />
+      </div>
     </section>
   );
 };
