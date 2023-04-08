@@ -54,13 +54,13 @@ const Metrics = () => {
         </div>
       </motion.div>
       <div className="flex justify-center">
-      <motion.img
-        variants={fadeIn("up", "tween", 0.1, 0.3)}
-        src="/arrow-down.svg"
-        alt="arrow down"
-        className="w-[50px] h-[50px] object-contain my-[28px] bg-gray-300 p-3 dark:bg-gray-500"
-      />
-    </div>
+        <motion.img
+          variants={fadeIn("up", "tween", 0.1, 0.3)}
+          src="/arrow-down.svg"
+          alt="arrow down"
+          className="w-[50px] h-[50px] object-contain my-[28px] bg-gray-300 p-3 dark:bg-gray-500"
+        />
+      </div>
     </section>
   );
 };

@@ -31,7 +31,7 @@ const Gallery = () => {
       >
         Explore Our Creations
       </motion.p>
-      <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 gap-4 mt-16 md:mt-32 border-4 border-red-500">
+      <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 gap-4 mt-16 md:mt-32">
         <div className="col-span-1">
           <div className="w-full h-full">
             <Image
@@ -92,7 +92,7 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="col-span-1 md:col-span-2 border-4">
+        <div className="col-span-1 md:col-span-2">
           <div className="w-full h-full">
             <Image
               src="/bead-making.jpg"
@@ -106,7 +106,7 @@ const Gallery = () => {
         </div>
       </div>
       <motion.img
-        variants={fadeIn("up", "tween", 0.2, 0.5)}
+        variants={fadeIn("up", "tween", 0.1, 0.3)}
         src="/arrow-down.svg"
         alt="arrow down"
         className="w-[50px] h-[50px] object-contain my-[28px] bg-gray-300 p-3 dark:bg-gray-500"
