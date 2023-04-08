@@ -46,7 +46,7 @@ const Gallery = () => {
           </div>
           <div className="col-span-1 row-span-2 md:row-span-1">
             <div className="w-full h-full">
-            <motion.img
+              <motion.img
                 variants={slideIn("right", "tween", 0.1, 0.2)}
                 src="/decoration.jpg"
                 width={400}
@@ -59,7 +59,7 @@ const Gallery = () => {
           </div>
           <div className="col-span-1 md:row-span-2">
             <div className="w-full h-full">
-            <motion.img
+              <motion.img
                 variants={slideIn("left", "tween", 0.1, 0.2)}
                 src="/bead-making.jpg"
                 width={400}
@@ -72,7 +72,7 @@ const Gallery = () => {
           </div>
           <div className="col-span-2 md:col-span-2">
             <div className="w-full h-full">
-            <motion.img
+              <motion.img
                 variants={slideIn("left", "tween", 0.1, 0.2)}
                 src="/makeup.jpg"
                 width={400}
@@ -85,7 +85,7 @@ const Gallery = () => {
           </div>
           <div className="col-span-1">
             <div className="w-full h-full">
-            <motion.img
+              <motion.img
                 variants={slideIn("left", "tween", 0.1, 0.2)}
                 src="/decoration.jpg"
                 width={400}
@@ -98,7 +98,8 @@ const Gallery = () => {
           </div>
           <div className="col-span-1 md:col-span-2">
             <div className="w-full h-full">
-              <Image
+              <motion.img
+                variants={slideIn("right", "tween", 0.1, 0.2)}
                 src="/bead-making.jpg"
                 width={400}
                 height={400}
