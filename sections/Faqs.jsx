@@ -24,16 +24,12 @@ const Faqs = ({faqHome}) => {
       <div className={`${styles.paddings} md:py-12 bg-gray-200 dark:bg-gray-600 relative z-10`}>
         <TypingText
         title="| Frequently Asked Questions"
-        textStyles="px-8 py-2 text-center md:text-[30px] font-semibold dark:text-gray-200"
+        textStyles="px-8 py-2"
       />
-      <TypingText
-          title="| Frequently Asked Questions"
-          textStyles="text-center md:text-[30px] font-bold dark:text-gray-200"
-        />
-        <div className="flex justify-center mx-auto mt-2">
-          <span className="inline-block w-40 h-1 rounded-full bg-pure-black"></span>
-          <span className="inline-block w-3 h-1 mx-1 rounded-full bg-pure-grey"></span>
-          <span className="inline-block w-1 h-1 rounded-full bg-pure-black"></span>
+        <div className="opacity-20 flex justify-center mx-auto mt-2">
+          <span className="inline-block w-20 h-1 rounded-full bg-orange-500"></span>
+          <span className="inline-block w-10 h-1 mx-1 rounded-full bg-purple-500"></span>
+          <span className="inline-block w-20 h-1 rounded-full bg-orange-500"></span>
         </div>
         <div className="mx-4 mt-2 question-wrap">
           {faqHome.map((faq) => (
