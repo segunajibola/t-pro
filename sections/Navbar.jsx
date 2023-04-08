@@ -82,7 +82,7 @@ const Navbar = ({ handleMode, darkMode }) => {
         onClick={handleClick}
         className="md:hidden z-30 cursor-pointer dark:text-gray-800"
       >
-        {!nav ? <FaBars size={22} /> : <FaTimes size={22} />}
+        {!nav ? <FaBars size={22} /> : <FaTimes size={22} className={nav ? text-white : ""} />}
       </div>
 
       {/* Mobile menu */}
@@ -99,13 +99,13 @@ const Navbar = ({ handleMode, darkMode }) => {
         </li>
 
         <li className="py-2 text-3xl">
-          <Link
+          <a
             onClick={handleClick}
             className="cursor-pointer"
             href="/#services"
           >
             Services
-          </Link>
+          </a>
         </li>
         <li className="py-2 text-3xl">
           <Link
