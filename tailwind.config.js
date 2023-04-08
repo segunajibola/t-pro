@@ -10,7 +10,13 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "gra-1": "#7aebfb",
+        "gra-2": "#9c5e85",
+        "gra-3": "#0d292c",
+      }
+    },
   },
   plugins: [],
 }
