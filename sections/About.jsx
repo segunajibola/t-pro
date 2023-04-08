@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { TypingText } from "../components";
 import "../styles/gradient.css";
 import styles from "../styles";
-import { fadeIn, staggerContainer } from "../utils/motion";
-import Link from "next/link"
+import { fadeIn, staggerContainer, slideIn } from "../utils/motion";
+import Link from "next/link";
 
 const About = () => (
   <section
@@ -19,7 +19,7 @@ const About = () => (
     />
 
     <motion.p
-      variants={fadeIn("up", "tween", 0.2, 1)}
+      variants={fadeIn("up", "tween", 0.2, 0.5)}
       className="mt-[8px] font-normal text-[14px] md:text-[24px] text-center text-secondary-white dark:text-white"
     >
       Who We Are
@@ -41,24 +41,26 @@ const About = () => (
         </motion.h2>
 
         <motion.p
-          variants={fadeIn("up", "tween", 0.1, 0.5)}
-          className="mt-[8px] font-normal mr-3 text-[17px] md:text-[20px] text-secondary-white dark:text-white"
+          variants={fadeIn("up", "tween", 0.1, 0.3)}
+          className="mt-[8px] font-normal mr-5 text-[17px] md:text-[20px] text-secondary-white dark:text-white"
         >
           Welcome to our world of beauty, creativity, and elegance! Our website
           offers a wide range of services in beauty, bead making, and event
           decoration that are tailored to your specific needs and preferences.
         </motion.p>
         <button className="bg-gray-100 p-3 my-3 mr-3 dark:text-white rounded-md">
-          <Link
-            href="/about"
-            className=""
-          >
+          <Link href="/about" className="">
             More About Us
           </Link>
         </button>
       </motion.div>
       <div className="flex flex-col justify-center w-full mt-5 md:mt-0 md:w-[50%]">
-        <img src="/wedding-makeup.jpg" alt="" className="h-[80%] w-[100%]" />
+        <motion.img
+          variants={slideIn("right", "tween", 0.1, 0.3)}
+          src="/wedding-makeup.jpg"
+          alt=""
+          className="h-[80%] w-[100%]"
+        />
       </div>
     </div>
     <div className="flex justify-center">
