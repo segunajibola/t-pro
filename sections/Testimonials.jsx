@@ -37,38 +37,40 @@ const Testimonials = () => {
         >
           What Others Are Saying
         </motion.p>
-        <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          navigation={false}
-          modules={[Autoplay, Navigation]}
-          className="w-[430px] sm:w-[30rem] mx-auto md:w-[40rem]"
-        >
-          {testimonials.map((testimonial) => (
-            <SwiperSlide className="md:my-5 p-2">
-              <figure className="p-3 text-center">
-                <img
-                  className="w-32 h-32 rounded-full mx-auto"
-                  src={testimonial.image}
-                  alt=""
-                />
-                <figcaption className="font-medium text-gray-500 dark:text-gray-800">
-                  <div className="">{testimonial.name}</div>
-                  <div className="mb-2">{testimonial.position}</div>
-                </figcaption>
-                <blockquote className="mx-auto">
-                  <p className="text-lg font-normal mx-2 dark:text-gray-900">
-                    {testimonial.text}
-                  </p>
-                </blockquote>
-              </figure>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <motion.div variants={fadeIn("up", "tween", 0.2, 1)}>
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            navigation={false}
+            modules={[Autoplay, Navigation]}
+            className="w-[430px] mt-10 md:16 sm:w-[30rem] mx-auto md:w-[40rem]"
+          >
+            {testimonials.map((testimonial) => (
+              <SwiperSlide className="md:my-5 p-2">
+                <figure className="p-3 text-center">
+                  <img
+                    className="w-32 h-32 rounded-full mx-auto"
+                    src={testimonial.image}
+                    alt=""
+                  />
+                  <figcaption className="font-medium text-gray-500 dark:text-gray-800">
+                    <div className="my-2">{testimonial.name}</div>
+                    <div className="my-2">{testimonial.position}</div>
+                  </figcaption>
+                  <blockquote className="mx-auto">
+                    <p className="text-lg font-normal mx-2 dark:text-gray-900">
+                      {testimonial.text}
+                    </p>
+                  </blockquote>
+                </figure>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </motion.div>
       </motion.div>
       <div className="flex justify-center">
         <motion.img
