@@ -58,8 +58,8 @@ const About = () => (
         <motion.img
           variants={slideIn("right", "tween", 0.1, 0.3)}
           src="/wedding-makeup.jpg"
-          alt=""
-          className="h-[80%] w-[100%]"
+          alt="wedding make-up"
+          className="bg-cfgover object-cover object-top rounded-2xl h-[70%] my-auto w-[100%]"
         />
       </div>
     </div>
