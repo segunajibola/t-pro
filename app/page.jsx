@@ -18,7 +18,7 @@ export default function Home() {
       Testimonials, 
       Book Appointment, 
       Special Offers, 
-      Terms and Conditions, in footer
+      Terms and Conditions,in footer
       Products */}
     </div>
   );
