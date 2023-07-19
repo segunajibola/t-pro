@@ -28,11 +28,6 @@ const Navbar = ({ handleMode, darkMode }) => {
         href="/"
         onClick={() => window.scrollTo(0, 0)}
       >
-        {/* <img
-          src="/navbar/etherchannellogo.png"
-          alt="Logo Image"
-          style={{ width: "80px", height: "80px", borderRadius: "50px" }} 
-        />*/}
         T-PRO SIGNATURE
       </Link>
 
@@ -71,7 +66,7 @@ const Navbar = ({ handleMode, darkMode }) => {
         {/* Dark/Light Mode */}
         <div
           onClick={handleMode}
-          className="z-30 sm:ml-[3f0rem] md:mfl-0 cursor-pointer dark:text-gray-800"
+          className="z-30 cursor-pointer dark:text-gray-800"
         >
           {darkMode ? <FaLightbulb size={20}/> : <FaMoon size={20} />}
         </div>
@@ -82,13 +77,13 @@ const Navbar = ({ handleMode, darkMode }) => {
         onClick={handleClick}
         className="md:hidden z-30 cursor-pointer dark:text-gray-800"
       >
-        {!nav ? <FaBars size={22} /> : <FaTimes size={22} className={nav ? "text-white" : ""} />}
+        {!nav ? <FaBars size={22} /> : <FaTimes size={22} className="text-white" />}
       </div>
 
       {/* Mobile menu */}
       <ul
         id="nav"
-        className={`rounded-l-full top-0 right-0 w-[35%] bg-gradient-to-r from-gra-1 dark:from-gray-700 via-gra-2 dark:via-gray-800 to-gra-3 dark:to-gray-400 opacity-90 font-semibold p-10 pl-20 text-gray-200 dark:text-gray-300 fixed h-full z-20 ease-in-out duration-300 flex flex-col justify-center items-center  space-y-8 ${
+        className={`flex flex-col justify-center items-center space-y-8 rounded-l-full top-0 right-0 w-[35%] bg-gradient-to-r from-gra-1 dark:from-gray-700 via-gra-2 dark:via-gray-800 to-gra-3 dark:to-gray-400 opacity-90 font-semibold p-10 pl-20 text-gray-200 dark:text-gray-300 fixed h-full z-20 ease-in-out duration-300 ${
           nav ? "translate-x-0" : "translate-x-full"
         }`}
       >
